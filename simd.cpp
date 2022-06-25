@@ -7,7 +7,7 @@
 struct Vec8u {
   union {
     __m256 reg;
-    std::uint64_t entry[4];
+    std::uint64_t entry[8];
   };
 
   Vec8u(std::uint64_t x) { reg = _mm256_set1_epi64x(x); };
